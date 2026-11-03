@@ -8,3 +8,19 @@ kubectl   get   pod   nginx   -o   wide
 kubectl   exec   nginx   -- curl   -I   http://localhost
 kubectl   get   pods   –w
 kubectl   delete   pod   nginx
+
+kubectl create deployment nginx --image=nginx
+kubectl get deployments
+kubectl get pods
+kubectl describe deployment nginx
+kubectl describe pod nginx-69b9cdbbdd-gqsm9
+kubectl logs nginx-69b9cdbbdd-gqsm9
+kubectl get deployments nginx -o yaml
+kubectl get deployments nginx -o wide
+kubectl get pods nginx -o wide
+kubectl get pods -o wide
+kubectl scale deployment nginx --replicas=3
+kubectl get pods -o wide
+kubectl get pods -w
+kubectl get deployments nginx -o yaml
+kubectl delete deployment nginx
