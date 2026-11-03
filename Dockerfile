@@ -11,3 +11,9 @@ WORKDIR /app
 RUN pip install mysql-connector-python
 COPY app.py /app/app.py
 CMD ["python", "app.py"]
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+FROM nginx:alpine
+COPY index.html /usr/share/nginx/html/index.html
+EXPOSE 80
