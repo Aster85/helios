@@ -1,0 +1,5 @@
+services:
+  java-service:
+    build: .
+    container_name: my-java-app
+    command: ["java", "Helloworld"]
