@@ -24,3 +24,8 @@ kubectl get pods -o wide
 kubectl get pods -w
 kubectl get deployments nginx -o yaml
 kubectl delete deployment nginx
+kubectl create deployment apache --image=httpd:latest --replicas=3
+kubectl get pods
+kubectl delete pod apache-7bcddd6ddc-kmpvz
+kubectl delete deployment apache
+
