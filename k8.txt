@@ -1,0 +1,10 @@
+kubectl   run   nginx   --image=nginx
+kubectl   get   pods
+kubectl   describe   pod   nginx
+kubectl   logs   nginx
+kubectl   exec   nginx --  nginx  -v
+kubectl   get   pod   nginx   -o   yaml
+kubectl   get   pod   nginx   -o   wide
+kubectl   exec   nginx   -- curl   -I   http://localhost
+kubectl   get   pods   –w
+kubectl   delete   pod   nginx
